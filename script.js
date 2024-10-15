@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
         navigator.geolocation.getCurrentPosition(position => {
             console.log(`Latitud: ${position.coords.latitude}\nLongitud: ${position.coords.longitude}`);
 
-
-
             // Crear un mapa en el div con id "map"
             var map = L.map('map').setView([position.coords.latitude, position.coords.longitude], 13);
 
@@ -71,13 +69,14 @@ async function pintarTerremotos() {
 // FUNCIÓN AGREGAR MARCADOR MAPA
 function addMarker(map2, lat, lng, magnitude, title, date, location, code) {
     const color = getColor(magnitude);
-    const marker = L.circleMarker([lat, lng], {   //diselño círculos
+    //diseño círculo 
+    const marker = L.circleMarker([lat, lng], {   
         radius: magnitude * 2,
-        fillColor: color,
-        color: color,
+        fillColor: color, 
+        color: color, 
         weight: 1,
-        opacity: 1,
-        fillOpacity: 0.6,
+        
+       
     }).addTo(map2); //añadir marcador al mapa
 
     //bindPopup función para vincular popup con mapas
@@ -117,3 +116,5 @@ function getColor(magnitude) {
 
     return color;
 }
+
+

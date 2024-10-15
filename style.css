@@ -1,4 +1,4 @@
-/* Reset básico */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -6,24 +6,23 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-/* Estilo para el contenedor de los mapas */
+
 #map, #map2 {
-    height: 50vh; /* Altura de cada mapa */
-    width: 100%; /* Ancho completo */
-    border: 2px solid #ccc; /* Borde ligero alrededor del mapa */
-    margin: 10px 0; /* Espaciado entre mapas */
+    height: 50vh; 
+    width: 100%; 
+    border: 2px solid #ccc; 
+    margin: 10px 0; 
 }
 
-/* Estilo para el cuerpo */
+
 body {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra el contenido horizontalmente */
-    justify-content: center; /* Centra el contenido verticalmente */
-    background-color: #f4f4f4; /* Color de fondo suave */
+    align-items: center; 
+    justify-content: center; 
+    background-color: #f4f4f4; 
 }
 
-/* Títulos opcionales */
 h1 {
     text-align: center;
     margin: 20px 0;
