@@ -20,8 +20,21 @@
     <div id="map"></div>
 
     <div id="map2"></div>
-
-
+    <form id="filterMagnitude">
+        <label for="magnitude">Magnitud mínima:</label>
+        <input type="number" id="magnitude" name="magnitude" step="0.1" >
+        <button type="submit">Buscar por Magnitud</button>
+    </form>
+    
+    <form id="filterDate">
+        <label for="startDate">Fecha de inicio:</label>
+        <input type="date" id="startDate" name="startDate">
+        
+        <label for="endDate">Fecha de fin:</label>
+        <input type="date" id="endDate" name="endDate">
+        
+        <button type="submit">Buscar por Fechas</button>
+    </form>
 
     
     <script src="./script.js"></script>
